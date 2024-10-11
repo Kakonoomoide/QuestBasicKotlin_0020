@@ -79,6 +79,6 @@ fun looping(){
 }
 
 fun main(){
-    //ConditionalStatement()
+    ConditionalStatement()
     looping()
 }
