@@ -21,4 +21,11 @@ fun main(){
     // - Creates a new instance of DataClass with the same property values as the original instance.
     val data3 = data.copy()
     println(data3) // result : same with data
+
+    // Function Copy with Change
+    // - Creates a new instance of DataClass with a modified property value.
+    // - and the email is changed while keeping the original id.
+    val data4 = data.copy(email = "sahar@gmail.com")
+    println(data4)
+
 }
