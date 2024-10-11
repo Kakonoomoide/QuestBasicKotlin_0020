@@ -16,6 +16,14 @@ fun nullSafety(){
     } else {
         println("neverNull is not null") // This line will always run
     }
+
+    // Safe call operator
+    // - The safe call operator (?.) allows access to properties or methods of a nullable type without risking a NullPointerException.
+    // - If nullable is null, the expression will return null instead of throwing an error.
+    println(neverNull.length) // Prints: 18
+    println(nullable?.length) // Prints: null
+
+    
 }
 
 fun main(){
