@@ -34,7 +34,7 @@ fun ListExample(){
 // A set is an unordered collection of unique elements.
 fun SetExample(){
     println()
-    println("=== Set ===")
+    println("=== MAP ===")
 
     // Read-Only set
     // .. A set created using `setOf()` contains unique elements and cannot be modified.
@@ -54,17 +54,45 @@ fun SetExample(){
     shape.remove("Circle")
     println(shape)
 
-    // Change mutable list to read-only list
+    // Change mutable Set to read-only Set
     val shapeLocked: Set<String> = shape
     println(shapeLocked)
 }
 
-// map
+// A map is a collection of key-value pairs, where each key is unique.
 fun MapExample(){
+    println()
+    println("=== MAP ===")
 
+    // Read-Only Map
+    // .. A map created using `mapOf()` contains unique key-value pairs and cannot be modified.
+    val readOnlyMap: Map<String, Int> = mapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+    println(readOnlyMap)
+
+    // Mutable Map
+    // .. A map created using `mutableMapOf()` allows for dynamic modification.
+    val shape: MutableMap<String, Int> = mutableMapOf("Circle" to 1, "Square" to 2, "Triangle" to 3)
+    println(shape)
+
+    // Add data to MutableMap (Shape)
+    shape["Rectangle"] = 4
+    println(shape)
+
+    // Remove data to MutableSet (Shape)
+    shape.remove("Circle")
+    println(shape)
+
+    // Change an element in the Mutable Map (Shape)
+    shape["Square"] = 5
+    println(shape)
+
+    // Change mutable Map to read-only Map
+    val shapeLocked: Map<String, Int> = shape
+    println(shapeLocked)
 }
 
 fun main(){
     ListExample()
     SetExample()
+    MapExample()
 }
