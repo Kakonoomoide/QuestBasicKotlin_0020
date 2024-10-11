@@ -34,9 +34,24 @@ fun withDefaultArgument(name: String = "people", age: Int) {
 // Function withReturn
 // - Calculates the area of a rectangle given its length (panjang) and width (lebar).
 fun withReturn(panjang: Int, lebar: Int): Int {
+    println()
+    println("== withReturn ==")
     return panjang * lebar
 }
 
 fun main(){
+    // Calling the function without parameters
+    withoutParameter()
 
+    // Calling the function with a parameter
+    withParameter("Rizki")
+
+    // Calling the function with named arguments
+    withNamedArgument(name = "kakonoomoide", age = 30)
+
+    // Calling the function with a default argument
+    withDefaultArgument(age = 25)
+
+    // Calling a function that returns a value
+    println(withReturn(panjang = 9, lebar = 2))
 }
