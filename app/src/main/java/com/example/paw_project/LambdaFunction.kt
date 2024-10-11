@@ -9,5 +9,9 @@ fun uppercastString(string: String): String {
 }
 
 fun main (){
+    // Calling the uppercaseString function
+    println( uppercastString("hello world") )
 
+    // Lambda expression to convert a string to uppercase
+    println({string:String -> string.uppercase()}("hello kotlin"))
 }
