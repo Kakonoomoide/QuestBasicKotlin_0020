@@ -15,5 +15,10 @@ fun main(){
     // Function Equals
     // - Compares two DataClass instances for equality based on their properties.
     val data2 = DataClass(1, "makan@gmail.com")
-    println(data == data2)
+    println(data == data2) // result : False
+
+    // Function Copy
+    // - Creates a new instance of DataClass with the same property values as the original instance.
+    val data3 = data.copy()
+    println(data3) // result : same with data
 }
