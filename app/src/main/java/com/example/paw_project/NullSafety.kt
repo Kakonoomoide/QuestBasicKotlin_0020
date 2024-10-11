@@ -23,7 +23,14 @@ fun nullSafety(){
     println(neverNull.length) // Prints: 18
     println(nullable?.length) // Prints: null
 
-    
+    // Function strLength
+    // - This function takes a non-nullable String parameter `notNull`.
+    // - It calculates and returns the length of the provided string.
+    fun strLength(notNull: String): Int {
+        return notNull.length
+    }
+
+    println(strLength(neverNull)) // Prints: 18
 }
 
 fun main(){
