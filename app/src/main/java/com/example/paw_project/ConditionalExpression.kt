@@ -12,6 +12,23 @@ fun ConditionalStatement(){
     } else {
         println("Negative Number")
     }
+
+    // When Statement
+    // - Evaluates the variable `day` to determine the corresponding day of the week.
+    // - Prints the name of the day for values 1 to 7.
+    // - If the value is outside this range, prints "Invalid Day".
+    val day = 4
+    when (day) {
+        1 -> println("Sunday")
+        2 -> println("Monday")
+        3 -> println("Tuesday")
+        4 -> println("Wednesday")
+        5 -> println("Thursday")
+        6 -> println("Friday")
+        7 -> println("Saturday")
+        else -> println("Invalid Day")
+    }
+
 }
 
 fun looping(){
@@ -19,5 +36,5 @@ fun looping(){
 }
 
 fun main(){
-
+    ConditionalStatement()
 }
