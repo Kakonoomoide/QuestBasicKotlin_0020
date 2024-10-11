@@ -42,9 +42,43 @@ fun ConditionalStatement(){
 }
 
 fun looping(){
+    println()
+    println("==== Looping ====")
+
+    // For Loop: Range
+    // - Iterates from 1 to 5, printing the current iteration number.
+    for (i in 1..5) {
+        println("Perulangan ke-$i")
+    }
+
+    // For Loop: List
+    // - Iterates over the list of car brands, printing each car type.
+    val cars = listOf("BMW", "Toyota", "Honda", "Audi")
+    for (car in cars) {
+        println("Car type: $car")
+    }
+
+    // While Loop
+    // - Continuously executes as long as `x` is less than or equal to 5.
+    // - Prints the current iteration number and increments `x`.
+    var x = 1
+    while (x <= 5) {
+        println("Perulangan ke-$x")
+        x++
+    }
+
+    // Do-While Loop
+    // - Executes the loop body at least once, then continues while `y` is less than or equal to 5.
+    // - Prints the current iteration number and increments `y`.
+    var y = 1
+    do {
+        println("Perulangan ke-$y")
+        y++
+    } while (y <= 5)
 
 }
 
 fun main(){
-    ConditionalStatement()
+    //ConditionalStatement()
+    looping()
 }
