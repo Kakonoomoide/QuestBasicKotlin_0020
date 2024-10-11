@@ -29,6 +29,16 @@ fun ConditionalStatement(){
         else -> println("Invalid Day")
     }
 
+    // Try-Catch Statement
+    // - Attempts to convert the string `value` to an integer.
+    // - catches the exception and prints "Invalid Number".
+    val value = "10"
+    try {
+        val result = value.toInt()
+        println("Result: $result")
+    } catch (e: NumberFormatException) {
+        println("Invalid Number")
+    }
 }
 
 fun looping(){
