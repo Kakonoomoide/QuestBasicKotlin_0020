@@ -31,6 +31,12 @@ fun withDefaultArgument(name: String = "people", age: Int) {
     println("Hello, $name! You are $age years old.")
 }
 
+// Function withReturn
+// - Calculates the area of a rectangle given its length (panjang) and width (lebar).
+fun withReturn(panjang: Int, lebar: Int): Int {
+    return panjang * lebar
+}
+
 fun main(){
 
 }
