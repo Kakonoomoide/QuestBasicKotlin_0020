@@ -23,6 +23,14 @@ fun withNamedArgument(name: String, age: Int) {
     println("Hello, $name! You are $age years old.")
 }
 
+// Function withDefaultArgument
+// - If `name` is not provided when the function is called, it defaults to "people".
+fun withDefaultArgument(name: String = "people", age: Int) {
+    println()
+    println("== withDefaultArgument ==")
+    println("Hello, $name! You are $age years old.")
+}
+
 fun main(){
 
 }
