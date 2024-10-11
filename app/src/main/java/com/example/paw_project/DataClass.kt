@@ -12,4 +12,8 @@ fun main(){
     val data = DataClass(1, "rizki@gmail.com")
     println(data)
 
+    // Function Equals
+    // - Compares two DataClass instances for equality based on their properties.
+    val data2 = DataClass(1, "makan@gmail.com")
+    println(data == data2)
 }
